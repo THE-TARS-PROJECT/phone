@@ -1,5 +1,5 @@
 import './global.css'
-import CButton from './components/Button';
+import CButton from './src/components/Button';
 import { Text, View, Permission, PermissionsAndroid } from 'react-native';
 import { useEffect } from 'react';
 import {
@@ -7,7 +7,7 @@ import {
 } from 'react-native-safe-area-context';
 
 import { BackHandler } from 'react-native';
-import DialPad from './components/DialPad';
+import DialPad from './src/components/DialPad';
 
 function App() {
 
