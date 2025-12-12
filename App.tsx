@@ -1,6 +1,7 @@
 import './global.css'
 import CButton from './src/components/Button';
-import { Text, View, Permission, PermissionsAndroid } from 'react-native';
+import { requestRole } from './src/DialerUtils';
+import { Text, View, PermissionsAndroid } from 'react-native';
 import { useEffect } from 'react';
 import {
   SafeAreaProvider
@@ -13,7 +14,7 @@ function App() {
 
   useEffect(() => {
     askPerm();
-  })
+  }, [])
 
   const askPerm = async () => {
     let perm = await PermissionsAndroid.request(
@@ -24,6 +25,8 @@ function App() {
       buttonNegative: 'Deny'
     }
     )
+
+    await requestRole();
 
     if (perm == PermissionsAndroid.RESULTS.GRANTED) {
       console.log("Granted")
