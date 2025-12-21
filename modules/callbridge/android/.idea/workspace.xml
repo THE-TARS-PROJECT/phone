@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e0e02f0-ebdd-49c3-a6f3-120df2342711" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/android/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/android/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/android/src/main/java/com/cooper/callbridge/CallBridgeModule.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/android/src/main/java/com/cooper/callbridge/CallBridgeView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridge.types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridge.types.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridge.types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridge.types.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.web.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.web.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.web.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.web.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.web.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.web.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.web.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/index.d.ts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/assets/adaptive-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/assets/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/assets/splash-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/metro.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/expo-module.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/ios/CallBridge.podspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/ios/CallBridgeModule.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/ios/CallBridgeView.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridge.types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridgeModule.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridgeModule.web.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridgeView.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridgeView.web.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../call-bridge/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="379gCp2doRT8bwMVv1yHdZFhJrg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "android.gradle.sync.needed": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/mnt/Sector16/cdialer/android"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e0e02f0-ebdd-49c3-a6f3-120df2342711" name="Changes" comment="" />
+      <created>1766320575393</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766320575393</updated>
+    </task>
+    <servers />
+  </component>
+</project>

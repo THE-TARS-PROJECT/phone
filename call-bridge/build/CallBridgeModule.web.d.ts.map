@@ -1,1 +1,0 @@
-{"version":3,"file":"CallBridgeModule.web.d.ts","sourceRoot":"","sources":["../src/CallBridgeModule.web.ts"],"names":[],"mappings":"AAAA,OAAO,EAAqB,YAAY,EAAE,MAAM,MAAM,CAAC;AAEvD,OAAO,EAAE,sBAAsB,EAAE,MAAM,oBAAoB,CAAC;AAE5D,cAAM,gBAAiB,SAAQ,YAAY,CAAC,sBAAsB,CAAC;IACjE,EAAE,SAAW;IACP,aAAa,CAAC,KAAK,EAAE,MAAM,GAAG,OAAO,CAAC,IAAI,CAAC;IAGjD,KAAK;CAGN;;AAED,wBAAuE"}
