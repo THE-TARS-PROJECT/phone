@@ -5,65 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e0e02f0-ebdd-49c3-a6f3-120df2342711" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/android/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/android/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/android/src/main/java/com/cooper/callbridge/CallBridgeModule.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/android/src/main/java/com/cooper/callbridge/CallBridgeView.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridge.types.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridge.types.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridge.types.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridge.types.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.web.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.web.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.web.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeModule.web.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.web.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.web.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.web.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/CallBridgeView.web.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/index.d.ts.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/build/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/assets/adaptive-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/assets/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/assets/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/assets/splash-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/metro.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/example/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/expo-module.config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/ios/CallBridge.podspec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/ios/CallBridgeModule.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/ios/CallBridgeView.swift" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridge.types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridgeModule.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridgeModule.web.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridgeView.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/CallBridgeView.web.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/src/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../call-bridge/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../app/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../app/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.transforms/0cfcf26e8a0510a403d2dc5ee09d470d/transformed/classes/classes_dex/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/.transforms/0cfcf26e8a0510a403d2dc5ee09d470d/transformed/classes/classes_dex/classes.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.transforms/0d3d5408c9be632c34beeaf83b24ea63/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/com/cooper/callbridge/CallbridgeModule$definition$lambda$1$$inlined$AsyncFunctionWithoutArgs$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.transforms/0d3d5408c9be632c34beeaf83b24ea63/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/com/cooper/callbridge/CallbridgeModule.dex" beforeDir="false" afterPath="$PROJECT_DIR$/build/.transforms/0d3d5408c9be632c34beeaf83b24ea63/transformed/bundleLibRuntimeToDirDebug/bundleLibRuntimeToDirDebug_dex/com/cooper/callbridge/CallbridgeModule.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/compile_library_classes_jar/debug/bundleLibCompileToJarDebug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/com/cooper/callbridge/CallbridgeModule$definition$lambda$1$$inlined$AsyncFunctionWithoutArgs$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/com/cooper/callbridge/CallbridgeModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/runtime_library_classes_dir/debug/bundleLibRuntimeToDirDebug/com/cooper/callbridge/CallbridgeModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/intermediates/runtime_library_classes_jar/debug/bundleLibRuntimeToJarDebug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-attributes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/jvm/kotlin/supertypes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/cacheable/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/classpath-snapshot/shrunk-classpath-snapshot.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/local-state/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileDebugKotlin/local-state/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/kotlin-classes/debug/com/cooper/callbridge/CallbridgeModule$definition$lambda$1$$inlined$AsyncFunctionWithoutArgs$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/kotlin-classes/debug/com/cooper/callbridge/CallbridgeModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kotlin-classes/debug/com/cooper/callbridge/CallbridgeModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cooper/callbridge/CallbridgeModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cooper/callbridge/CallbridgeModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cooper/callbridge/CallbridgeView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/Callbridge.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Callbridge.types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/CallbridgeModule.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../src/CallbridgeModule.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,9 +75,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="379gCp2doRT8bwMVv1yHdZFhJrg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />

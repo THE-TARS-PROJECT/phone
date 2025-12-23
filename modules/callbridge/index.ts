@@ -9,3 +9,7 @@ export { default } from './src/CallbridgeModule';
 export async function isRoleHeld(){
     return await CallbridgeModule.isRoleHeld();
 }
+
+export async function requestRole(){
+    return await CallbridgeModule.requestRole();
+}

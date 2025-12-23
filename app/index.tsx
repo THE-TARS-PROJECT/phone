@@ -1,22 +1,37 @@
-import callbridge from "@/modules/callbridge";
+import callbridge, { isRoleHeld, requestRole } from "@/modules/callbridge";
+import { useEventListener } from "expo";
 import { useEffect, useState } from "react";
 import { Text, View } from "react-native";
 
 export default function Home(){
 
-    const [result, setResult] = useState(false);
+    const [eventDebug, setEventDebug] = useState("");
 
     useEffect(() => {
-        async function test(){
-            const test = await callbridge.isRoleHeld();        
-            setResult(test);
+        async function roleCheck(){
+            const role = await isRoleHeld();
+            if (role){
+                return;
+            }
+            requestRole();
         }
-        test(); 
+
+        roleCheck();
     }, [])
+
+    useEventListener(callbridge, 'onRoleResult', (event) => {
+        console.debug(`Role granted: ${event.granted}`);
+    })
+
+    useEventListener(callbridge, "onCallStateChanged", (event) => {
+        if(event.isActive){
+            setEventDebug("Incoming call");
+        }
+    })
 
     return (
         <View>
-            <Text>{JSON.stringify(result, null, 2)}</Text>
+            <Text>Current Event: {eventDebug}</Text>            
         </View>
     )
 }

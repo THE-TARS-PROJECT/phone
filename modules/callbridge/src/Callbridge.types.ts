@@ -5,12 +5,18 @@ export type OnLoadEventPayload = {
 };
 
 export type CallbridgeModuleEvents = {
-  onChange: (params: ChangeEventPayload) => void;
+  onRoleResult: (granted: RoleRequestEventPayload) => void;
+  onCallStateChanged: (data: onCallStateChangeEventPayload) => void;
 };
 
-export type ChangeEventPayload = {
-  value: string;
-};
+export type RoleRequestEventPayload = {
+  granted: boolean
+}
+
+export type onCallStateChangeEventPayload = {
+  isActive: boolean
+  number: string
+}
 
 export type CallbridgeViewProps = {
   url: string;

@@ -4,6 +4,9 @@ import { CallbridgeModuleEvents } from './Callbridge.types';
 
 declare class CallbridgeModule extends NativeModule<CallbridgeModuleEvents> {
   isRoleHeld(): boolean;
+  requestRole(): (void);
+  answerCall(): (void);
+  hangUpCall(): (void);
 }
 
 // This call loads the native module object from the JSI.
