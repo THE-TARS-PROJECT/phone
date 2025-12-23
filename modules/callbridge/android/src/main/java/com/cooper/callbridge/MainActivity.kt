@@ -10,7 +10,7 @@ import kotlin.math.log
 
 class MainActivity : ReactActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        super.onCreate(null)
         handleIntent(intent)
     }
 

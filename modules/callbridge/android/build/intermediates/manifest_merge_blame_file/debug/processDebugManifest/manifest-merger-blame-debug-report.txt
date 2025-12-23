@@ -5,69 +5,37 @@
 5    <uses-sdk android:minSdkVersion="24" />
 6
 7    <application>
-7-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:4:5-34:19
-8        <activity
-8-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:5:9-17:20
-9            android:name="com.cooper.callbridge.MainActivity"
-9-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:6:13-41
-10            android:exported="false" >
-10-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:7:13-37
-11            <intent-filter>
-11-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:8:17-11:33
-12                <action android:name="android.intent.action.DIAL" />
-12-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:21-73
-12-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:29-70
-13
-14                <category android:name="android.intent.category.DEFAULT" />
-14-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:10:21-80
-14-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:10:31-77
-15            </intent-filter>
-16            <intent-filter>
-16-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:12:17-16:33
-17                <action android:name="android.intent.action.DIAL" />
-17-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:21-73
-17-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:29-70
-18
-19                <category android:name="android.intent.category.DEFAULT" />
-19-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:10:21-80
-19-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:10:31-77
-20
-21                <data android:scheme="tel" />
-21-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:15:21-50
-21-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:15:27-47
+7-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:2:5-14:19
+8        <service
+8-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:3:9-13:19
+9            android:name="com.cooper.callbridge.CallService"
+9-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:4:13-40
+10            android:enabled="true"
+10-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:5:13-35
+11            android:exported="true"
+11-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:6:13-36
+12            android:permission="android.permission.BIND_INCALL_SERVICE" >
+12-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:7:13-72
+13            <meta-data
+13-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:8:13-97
+14                android:name="android.telecom.IN_CALL_SERVICE_UI"
+14-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:8:24-73
+15                android:value="true" />
+15-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:8:74-94
+16            <meta-data
+16-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:13-102
+17                android:name="android.telecom.IN_CALL_SERVICE_RINGING"
+17-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:24-78
+18                android:value="true" />
+18-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:79-99
+19
+20            <intent-filter>
+20-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:10:13-12:29
+21                <action android:name="android.intent.action.InCallService" />
+21-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:11:17-78
+21-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:11:25-75
 22            </intent-filter>
-23        </activity>
-24
-25        <service
-25-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:18:9-33:19
-26            android:name="com.cooper.callbridge.CallService"
-26-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:19:13-40
-27            android:enabled="true"
-27-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:20:13-35
-28            android:exported="false"
-28-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:21:13-37
-29            android:permission="android.permission.BIND_INCALL_SERVICE" >
-29-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:22:13-72
-30            <meta-data
-30-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:23:13-25:40
-31                android:name="android.telecom.IN_CALL_SERVICE_UI"
-31-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:24:17-66
-32                android:value="true" />
-32-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:25:17-37
-33            <meta-data
-33-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:26:13-28:40
-34                android:name="android.telecom.IN_CALL_SERVICE_RINGING"
-34-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:27:17-71
-35                android:value="true" />
-35-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:28:17-37
-36
-37            <intent-filter>
-37-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:30:13-32:29
-38                <action android:name="android.telecom.InCallService" />
-38-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:31:17-72
-38-->/mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:31:25-69
-39            </intent-filter>
-40        </service>
-41    </application>
-42
-43</manifest>
+23        </service>
+24    </application>
+25
+26</manifest>
