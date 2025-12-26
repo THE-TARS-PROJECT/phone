@@ -1,7 +1,7 @@
 import callbridge, { isRoleHeld, requestRole } from "@/modules/callbridge";
 import { useEventListener } from "expo";
 import { useEffect, useState } from "react";
-import { Text, View } from "react-native";
+import { Button, View } from "react-native";
 
 export default function Home(){
 
@@ -30,8 +30,14 @@ export default function Home(){
     })
 
     return (
-        <View>
-            <Text>Current Event: {eventDebug}</Text>            
+        <View style={{
+            flex: 1,
+            alignItems: "center",
+            justifyContent: "center"
+        }}>
+            <Button title={'Simulate Incoming Call'} onPress={() => {
+                callbridge.simulateCall();
+            }} />
         </View>
     )
 }
