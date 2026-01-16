@@ -7,6 +7,11 @@ export default function Home(){
 
     const [eventDebug, setEventDebug] = useState("");
 
+    async function _simulateIncomingCall(){
+        console.log("trying to simulate call.")
+        await callbridge.simulateCall();
+    }
+
     useEffect(() => {
         async function roleCheck(){
             const role = await isRoleHeld();
@@ -36,7 +41,7 @@ export default function Home(){
             justifyContent: "center"
         }}>
             <Button title={'Simulate Incoming Call'} onPress={() => {
-                callbridge.simulateCall();
+                _simulateIncomingCall();
             }} />
         </View>
     )

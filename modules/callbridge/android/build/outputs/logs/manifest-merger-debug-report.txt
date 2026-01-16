@@ -1,41 +1,57 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:1:1-15:12
-INJECTED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:1:1-15:12
+ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:2:1-32:12
 	package
 		INJECTED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:2:5-14:19
-service#com.cooper.callbridge.CallService
-ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:3:9-13:19
+ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:4:5-30:19
+service#com.cooper.callbridge.CBConnService
+ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:5:9-13:19
 	android:enabled
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:5:13-35
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:7:13-35
 	android:exported
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:6:13-36
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:8:13-36
 	android:permission
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:7:13-72
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:13-84
 	android:name
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:4:13-40
-meta-data#android.telecom.IN_CALL_SERVICE_UI
-ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:8:13-97
-	android:value
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:8:74-94
-	android:name
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:8:24-73
-meta-data#android.telecom.IN_CALL_SERVICE_RINGING
-ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:13-102
-	android:value
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:79-99
-	android:name
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:9:24-78
-intent-filter#action:name:android.intent.action.InCallService
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:6:13-63
+intent-filter#action:name:android.telecom.ConnectionService
 ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:10:13-12:29
-action#android.intent.action.InCallService
-ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:11:17-78
+action#android.telecom.ConnectionService
+ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:11:17-76
 	android:name
-		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:11:25-75
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:11:25-73
+service#com.cooper.callbridge.CallService
+ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:14:9-29:19
+	android:enabled
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:16:13-35
+	android:exported
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:17:13-36
+	android:permission
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:18:13-72
+	android:name
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:15:13-40
+meta-data#android.telecom.IN_CALL_SERVICE_UI
+ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:19:13-21:40
+	android:value
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:21:17-37
+	android:name
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:20:17-66
+meta-data#android.telecom.IN_CALL_SERVICE_RINGING
+ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:22:13-24:40
+	android:value
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:24:17-37
+	android:name
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:23:17-71
+intent-filter#action:name:android.intent.action.InCallService
+ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:26:13-28:29
+action#android.intent.action.InCallService
+ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:27:17-78
+	android:name
+		ADDED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml:27:25-75
 uses-sdk
 INJECTED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /mnt/Sector16/cdialer/modules/callbridge/android/src/main/AndroidManifest.xml

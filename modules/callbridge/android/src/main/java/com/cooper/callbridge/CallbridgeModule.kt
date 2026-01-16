@@ -29,7 +29,8 @@ class CallbridgeModule : Module() {
     private final val  ROLE_REQ_CODE = 42
     private var _number: String? = ""
 
-  @RequiresApi(Build.VERSION_CODES.Q)
+
+  @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
   override fun definition() = ModuleDefinition {
 
     Name("Callbridge")
@@ -108,7 +109,7 @@ class CallbridgeModule : Module() {
           val phoneAccountHandle = PhoneAccountHandle(compName, "AdminAccount")
 
           val phoneAccount = PhoneAccount.builder(phoneAccountHandle, "Call Simulator")
-              .setCapabilities(PhoneAccount.CAPABILITY_SELF_MANAGED)
+              .setCapabilities(PhoneAccount.CAPABILITY_SUPPORTS_TRANSACTIONAL_OPERATIONS )
               .build()
 
           calLService.registerPhoneAccount(phoneAccount)
