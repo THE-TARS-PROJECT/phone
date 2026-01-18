@@ -32,7 +32,7 @@ export default function Home(){
     })
 
     return (
-        <View className={'flex'}>
+        <View style={{flex: 1, justifyContent: 'flex-end', backgroundColor: 'black'}}>
             <DialPad />
         </View>
     )
