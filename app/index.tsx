@@ -2,12 +2,27 @@ import callbridge, { isRoleHeld, requestRole } from "@/modules/callbridge";
 import { useEventListener } from "expo";
 import { useEffect, useState } from "react";
 import { View } from "react-native";
-import DialPad from "./components/DialPad";
+import Appbar from "./components/Appbar";
+
+import * as Contacts from 'expo-contacts';
 
 
 export default function Home(){
 
     const [eventDebug, setEventDebug] = useState("");
+
+    useEffect(() => {
+        (async () => {
+            const {status} = await Contacts.requestPermissionsAsync();
+            if(status == 'granted'){
+                console.log("permission granted");
+            }
+
+            else{
+                console.log("permission denied");
+            }
+        })
+    })
 
     useEffect(() => {
         async function roleCheck(){
@@ -32,8 +47,9 @@ export default function Home(){
     })
 
     return (
-        <View style={{flex: 1, justifyContent: 'flex-end', backgroundColor: 'black'}}>
-            <DialPad />
+        <View style={{flex: 1, justifyContent: 'flex-start', backgroundColor: 'black'}}>
+            <Appbar title={'recent calls'}></Appbar>
+            {/* <DialPad /> */}
         </View>
     )
 }
