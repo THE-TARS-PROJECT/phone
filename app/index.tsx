@@ -1,16 +1,13 @@
 import callbridge, { isRoleHeld, requestRole } from "@/modules/callbridge";
 import { useEventListener } from "expo";
 import { useEffect, useState } from "react";
-import { Button, View } from "react-native";
+import { View } from "react-native";
+import DialPad from "./components/DialPad";
+
 
 export default function Home(){
 
     const [eventDebug, setEventDebug] = useState("");
-
-    async function _simulateIncomingCall(){
-        console.log("trying to simulate call.")
-        await callbridge.simulateCall();
-    }
 
     useEffect(() => {
         async function roleCheck(){
@@ -35,14 +32,8 @@ export default function Home(){
     })
 
     return (
-        <View style={{
-            flex: 1,
-            alignItems: "center",
-            justifyContent: "center"
-        }}>
-            <Button title={'Simulate Incoming Call'} onPress={() => {
-                _simulateIncomingCall();
-            }} />
+        <View className={'flex'}>
+            <DialPad />
         </View>
     )
 }

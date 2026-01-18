@@ -1,5 +1,4 @@
 import { NativeModule, requireNativeModule } from 'expo';
-
 import { CallbridgeModuleEvents } from './Callbridge.types';
 
 declare class CallbridgeModule extends NativeModule<CallbridgeModuleEvents> {
