@@ -29,13 +29,13 @@ class CallbridgeModule : Module() {
     private final val  ROLE_REQ_CODE = 42
     private var _number: String? = ""
 
-  @RequiresApi(Build.VERSION_CODES.Q)
+
+  @RequiresApi(Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
   override fun definition() = ModuleDefinition {
 
     Name("Callbridge")
 
       Events("onRoleResult", "onCallStateChanged")
-
       Property("_number").get { return@get _number }.set { newNum: String? ->{ _number = newNum } }
 
       OnCreate {
@@ -98,26 +98,6 @@ class CallbridgeModule : Module() {
 
       AsyncFunction("hangUpCall"){
           CallManager.currentCall.value?.disconnect()
-      }
-
-      AsyncFunction("simulateCall"){
-          val context = appContext.reactContext
-          val calLService = context?.getSystemService(Context.TELECOM_SERVICE) as TelecomManager
-
-          val compName = ComponentName(context, CallService::javaClass.javaClass)
-          val phoneAccountHandle = PhoneAccountHandle(compName, "AdminAccount")
-
-          val phoneAccount = PhoneAccount.builder(phoneAccountHandle, "Call Simulator")
-              .setCapabilities(PhoneAccount.CAPABILITY_SELF_MANAGED)
-              .build()
-
-          calLService.registerPhoneAccount(phoneAccount)
-
-          val extras = Bundle()
-          val uri = Uri.fromParts("tel", "9319376830", null)
-          extras.putParcelable(TelecomManager.EXTRA_INCOMING_CALL_ADDRESS, uri)
-
-          calLService.addNewIncomingCall(phoneAccountHandle, extras)
       }
   }
 }

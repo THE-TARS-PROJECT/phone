@@ -1,7 +1,9 @@
 import callbridge, { isRoleHeld, requestRole } from "@/modules/callbridge";
 import { useEventListener } from "expo";
 import { useEffect, useState } from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import DialPad from "./components/DialPad";
+
 
 export default function Home(){
 
@@ -30,8 +32,8 @@ export default function Home(){
     })
 
     return (
-        <View>
-            <Text>Current Event: {eventDebug}</Text>            
+        <View style={{flex: 1, justifyContent: 'flex-end', backgroundColor: 'black'}}>
+            <DialPad />
         </View>
     )
 }
