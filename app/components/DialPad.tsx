@@ -20,22 +20,24 @@ export default function DialPad() {
         ["*", "0", "#"]
     ]
 
-    function appendDialText(digit: string){
+    function appendDialText(digit: string) {
         setDialText(`${dialText}${digit}`);
     }
 
-    function trimDialText(){
+    function trimDialText() {
         let copy = dialText;
         setDialText(copy.substring(0, copy.length - 1));
     }
 
     return (
         <View style={styles.main_container}>
-            <View style={styles.displayBox}>
-                <Text style={{
-                    color: '#AACFD1',
-                    fontSize: 24,
-                }}>{dialText}</Text>
+            <View style={styles.sub_container}>
+                <View style={styles.displayBox}>
+                    <Text style={{
+                        color: '#AACFD1',
+                        fontSize: 24,
+                    }}>{dialText}</Text>
+                </View>
                 <TouchableOpacity onPress={trimDialText}>
                     <Ionicons name="backspace" size={28} color="red" />
                 </TouchableOpacity>
@@ -77,13 +79,13 @@ export default function DialPad() {
 
 const styles = StyleSheet.create({
     main_container: {
+        flex: 1,
         gap: 50,
-        height: "40%",        
+        height: "40%",
         borderWidth: 2,
         borderColor: '#AACFD1',
         justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5
+        alignItems: 'center'
     },
 
     text: {
@@ -107,7 +109,11 @@ const styles = StyleSheet.create({
     displayBox: {
         width: '50%',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         gap: 10
+    },
+
+    sub_container: {
+        flexDirection: 'row'
     }
 })

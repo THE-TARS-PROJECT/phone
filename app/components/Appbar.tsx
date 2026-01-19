@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     },
 
     text: {
-        color: '#05080D',
+        color: '#303030ff',
         fontSize: 18,
         fontWeight: 'bold',
         fontFamily: 'monospace'
