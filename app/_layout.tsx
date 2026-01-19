@@ -1,4 +1,4 @@
-import { Slot, useRouter } from "expo-router"
+import { Stack, useRouter } from "expo-router"
 import { useState } from "react"
 import { StyleSheet, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
@@ -18,7 +18,13 @@ export default function RootLayout() {
             <View style={styles.container}>
                 <Appbar title={title} />
                 <View style={styles.content}>
-                    <Slot />
+                    <Stack
+                        screenOptions={{
+                            headerShown: false,
+                            animation: 'slide_from_left',
+                            animationDuration: 10
+                        }}
+                     />
                 </View>
                 <BottomBar
                     onBookPressed={() => {

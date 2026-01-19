@@ -1,6 +1,7 @@
-import { Pressable, StyleSheet, Text } from "react-native";
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
+import { Pressable, StyleSheet, Text, View } from "react-native";
 
-export default function Contact({ name }: { name: string }) {
+export default function Contact({ name, image }: { name: string, image: string | null }) {
     return (
         <Pressable
             style={({ pressed }) => [
@@ -10,11 +11,17 @@ export default function Contact({ name }: { name: string }) {
                 }
             ]} >
             {({ pressed }) => (
-                <Text style={[
-                    styles.text,
-                    { color: pressed ? 'black' : '#AACFD1' }
-                ]}>{name}</Text>
+                <View style={styles.sub_container}>
+                    <FontAwesome5 name="user-alt" size={24} color={
+                        pressed ? 'black' : '#AACFD1'
+                    } />
+                    <Text style={[
+                        styles.text,
+                        { color: pressed ? 'black' : '#AACFD1' }
+                    ]}>{name}</Text>
+                </View>
             )}
+
         </Pressable>
     )
 }
@@ -22,6 +29,12 @@ export default function Contact({ name }: { name: string }) {
 const styles = StyleSheet.create({
     main_container: {
         padding: 20,
+    },
+
+    sub_container: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 20,
     },
 
     text: {
