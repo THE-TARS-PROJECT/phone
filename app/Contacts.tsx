@@ -1,7 +1,8 @@
 import { getContacts } from "@/utils/ContactsManager";
 import { ExistingContact } from "expo-contacts";
 import { useEffect, useState } from "react";
-import { StyleSheet, View } from "react-native";
+import { FlatList, StyleSheet, View } from "react-native";
+import Contact from "./components/Contact";
 
 export default function Contacts(){
 
@@ -11,12 +12,19 @@ export default function Contacts(){
         (async () => {
             const contacts_ = await getContacts();
             setContacts(contacts_);
-        })
+        })();
     }, [])
 
     return (
         <View style={styles.main_container}>
-            
+            <FlatList 
+                data={contacts}
+                numColumns={1}
+                renderItem={({item}) => (
+                    <Contact name={item.name} />
+                )}
+            >
+            </FlatList>
         </View>
     )
 }
@@ -24,5 +32,6 @@ export default function Contacts(){
 const styles = StyleSheet.create({
     main_container: {
         flex: 1,
+        backgroundColor: '#000'
     }
 })
