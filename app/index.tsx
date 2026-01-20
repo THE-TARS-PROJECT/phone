@@ -1,18 +1,43 @@
-import callbridge, { isRoleHeld, requestRole } from "@/modules/callbridge";
+import callbridge, { isRoleHeld, registerPa, requestRole } from "@/modules/callbridge";
 import { useEventListener } from "expo";
-import { useEffect, useState } from "react";
-import { View } from "react-native";
+import { useEffect } from "react";
+import { Text, View } from "react-native";
 import DialPad from "./components/DialPad";
 
+import * as Contacts from 'expo-contacts';
 
-export default function Home(){
 
-    const [eventDebug, setEventDebug] = useState("");
+export default function Home() {
 
     useEffect(() => {
-        async function roleCheck(){
+        (async () => {
+            const { status } = await Contacts.requestPermissionsAsync();
+            if (status == 'granted') {
+                console.log("permission granted");
+            }
+
+            else {
+                console.log("permission denied");
+            }
+        })
+
+        async function init(){
+            let register = await registerPa();
+            if(!register){
+                console.log("failed to register phone account");
+                return;
+            }
+            console.log("phone account registered");
+            return;
+        }
+
+        init();
+    })
+
+    useEffect(() => {
+        async function roleCheck() {
             const role = await isRoleHeld();
-            if (role){
+            if (role) {
                 return;
             }
             requestRole();
@@ -26,13 +51,25 @@ export default function Home(){
     })
 
     useEventListener(callbridge, "onCallStateChanged", (event) => {
-        if(event.isActive){
-            setEventDebug("Incoming call");
+        if (event.isActive) {
+            console.log("incoming call")
         }
     })
 
     return (
-        <View style={{flex: 1, justifyContent: 'flex-end', backgroundColor: 'black'}}>
+        <View style={{ flex: 1, justifyContent: 'flex-start', backgroundColor: 'black' }}>
+            {/* <Appbar title={title}></Appbar> */}
+            <View style={{
+                flex: 1,
+                justifyContent: 'center',
+                alignContent: 'center',
+                alignItems: 'center'
+            }}>
+                <Text style={{
+                    color: '#fff',
+                    fontSize: 16
+                }}>CALL LOGS HERE</Text>
+            </View>
             <DialPad />
         </View>
     )

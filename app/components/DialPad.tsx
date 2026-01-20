@@ -9,6 +9,8 @@ import {
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from "react";
 
+import { placeCall } from "@/modules/callbridge";
+
 export default function DialPad() {
 
     const [dialText, setDialText] = useState("");
@@ -20,22 +22,35 @@ export default function DialPad() {
         ["*", "0", "#"]
     ]
 
-    function appendDialText(digit: string){
+    async function _placeCall(){
+        let status = await placeCall(dialText);
+        if(status){
+            console.log("outgoing call placed");
+        }
+
+        else{
+            console.log("failed to place call");
+        }
+    }
+
+    function appendDialText(digit: string) {
         setDialText(`${dialText}${digit}`);
     }
 
-    function trimDialText(){
+    function trimDialText() {
         let copy = dialText;
         setDialText(copy.substring(0, copy.length - 1));
     }
 
     return (
         <View style={styles.main_container}>
-            <View style={styles.displayBox}>
-                <Text style={{
-                    color: '#AACFD1',
-                    fontSize: 24,
-                }}>{dialText}</Text>
+            <View style={styles.sub_container}>
+                <View style={styles.displayBox}>
+                    <Text style={{
+                        color: '#AACFD1',
+                        fontSize: 24,
+                    }}>{dialText}</Text>
+                </View>
                 <TouchableOpacity onPress={trimDialText}>
                     <Ionicons name="backspace" size={28} color="red" />
                 </TouchableOpacity>
@@ -68,7 +83,9 @@ export default function DialPad() {
                     </View>
                 ))}
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+                _placeCall();                
+            }}>
                 <Ionicons name="call" size={30} color="#AACFD1" />
             </TouchableOpacity>
         </View>
@@ -77,13 +94,13 @@ export default function DialPad() {
 
 const styles = StyleSheet.create({
     main_container: {
+        flex: 1,
         gap: 50,
-        height: "40%",        
+        height: "40%",
         borderWidth: 2,
         borderColor: '#AACFD1',
         justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5
+        alignItems: 'center'
     },
 
     text: {
@@ -107,7 +124,11 @@ const styles = StyleSheet.create({
     displayBox: {
         width: '50%',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         gap: 10
+    },
+
+    sub_container: {
+        flexDirection: 'row'
     }
 })
