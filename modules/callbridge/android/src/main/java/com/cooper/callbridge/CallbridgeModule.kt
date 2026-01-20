@@ -12,7 +12,9 @@ import android.telecom.InCallService
 import android.telecom.PhoneAccount
 import android.telecom.PhoneAccountHandle
 import android.telecom.TelecomManager
+import android.util.Log
 import androidx.annotation.RequiresApi
+import androidx.annotation.RequiresPermission
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.core.os.bundleOf
 import expo.modules.kotlin.modules.Module
@@ -27,6 +29,7 @@ import kotlinx.coroutines.launch
 class CallbridgeModule : Module() {
     private val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())
     private final val  ROLE_REQ_CODE = 42
+    private val isPaRegsitered = false
     private var _number: String? = ""
 
 
@@ -36,7 +39,9 @@ class CallbridgeModule : Module() {
     Name("Callbridge")
 
       Events("onRoleResult", "onCallStateChanged")
-      Property("_number").get { return@get _number }.set { newNum: String? ->{ _number = newNum } }
+      Property("_number")
+          .get { return@get _number }
+          .set { newNum: String? ->{ _number = newNum } }
 
       OnCreate {
           scope.launch {
@@ -58,6 +63,29 @@ class CallbridgeModule : Module() {
 
       OnDestroy {
           scope.cancel()
+      }
+
+      AsyncFunction("registerPa"){
+          if(!isPaRegsitered){
+              val context = appContext.reactContext
+              if(context == null){
+                  Log.e("context", "react context is null")
+                  return@AsyncFunction null
+              }
+
+              val telecomManager = context.getSystemService(Context.TELECOM_SERVICE) as TelecomManager
+              val handle = PhoneAccountHandle(ComponentName(context, CBConnService::class.java), "cdialer")
+              val account = PhoneAccount.builder(handle, "cdialer")
+                  .setCapabilities(PhoneAccount.CAPABILITY_SELF_MANAGED)
+                  .build()
+
+              telecomManager.registerPhoneAccount(account)
+              return@AsyncFunction true
+          }
+
+          else{
+              return@AsyncFunction false
+          }
       }
 
       // check if role is held
@@ -98,6 +126,48 @@ class CallbridgeModule : Module() {
 
       AsyncFunction("hangUpCall"){
           CallManager.currentCall.value?.disconnect()
+      }
+
+      @RequiresPermission(anyOf = [android.Manifest.permission.CALL_PHONE, android.Manifest.permission.MANAGE_OWN_CALLS])
+      fun placeCall(number: String): Boolean? {
+          val context = appContext.reactContext
+          if(context == null){
+              Log.e("Context", "react context is null")
+              return null
+          }
+
+          val telecomManager = context.getSystemService(Context.TELECOM_SERVICE) as TelecomManager
+          val uri = Uri.fromParts("tel", number.toString(), null);
+          val bundle = Bundle()
+
+          val handle = PhoneAccountHandle(
+              ComponentName(context, CBConnService::class.java),
+              "cdialer"
+          )
+
+          bundle.putBoolean(TelecomManager.EXTRA_START_CALL_WITH_SPEAKERPHONE, true)
+          bundle.putParcelable(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE, handle)
+
+          if(telecomManager.isOutgoingCallPermitted(handle)){
+              try{
+                  telecomManager.placeCall(uri, bundle)
+                  return true
+              }
+
+              catch(e: SecurityException){
+                  Log.e("security", "failed to place call")
+                  Log.e("security", e.toString())
+                  return false
+              }
+          }
+          else{
+              return false
+          }
+      }
+
+      AsyncFunction("placeCall") { number: String ->
+          val status = placeCall(number)
+          return@AsyncFunction status
       }
   }
 }
