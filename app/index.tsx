@@ -1,19 +1,13 @@
-import callbridge, { isRoleHeld, requestRole } from "@/modules/callbridge";
+import callbridge, { isRoleHeld, registerPa, requestRole } from "@/modules/callbridge";
 import { useEventListener } from "expo";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Text, View } from "react-native";
 import DialPad from "./components/DialPad";
 
 import * as Contacts from 'expo-contacts';
-import { useRouter } from "expo-router";
 
 
 export default function Home() {
-
-    const router = useRouter();
-
-    const [eventDebug, setEventDebug] = useState("");
-    const [title, setTitle] = useState("Recent Calls");
 
     useEffect(() => {
         (async () => {
@@ -26,6 +20,18 @@ export default function Home() {
                 console.log("permission denied");
             }
         })
+
+        async function init(){
+            let register = await registerPa();
+            if(!register){
+                console.log("failed to register phone account");
+                return;
+            }
+            console.log("phone account registered");
+            return;
+        }
+
+        init();
     })
 
     useEffect(() => {
@@ -46,7 +52,7 @@ export default function Home() {
 
     useEventListener(callbridge, "onCallStateChanged", (event) => {
         if (event.isActive) {
-            setEventDebug("Incoming call");
+            console.log("incoming call")
         }
     })
 

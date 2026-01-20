@@ -13,3 +13,11 @@ export async function isRoleHeld(){
 export async function requestRole(){
     return await CallbridgeModule.requestRole();
 }
+
+export async function registerPa(){
+    return await CallbridgeModule.registerPa();
+}
+
+export async function placeCall(number: string){
+    return await CallbridgeModule.placeCall(number);
+}

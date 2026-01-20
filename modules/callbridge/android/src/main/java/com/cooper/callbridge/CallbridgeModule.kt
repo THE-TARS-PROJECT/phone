@@ -29,7 +29,7 @@ import kotlinx.coroutines.launch
 class CallbridgeModule : Module() {
     private val scope = CoroutineScope(Dispatchers.Main + SupervisorJob())
     private final val  ROLE_REQ_CODE = 42
-    private val isPaRegsitered = false
+    private var isPaRegsitered = false
     private var _number: String? = ""
 
 
@@ -80,6 +80,7 @@ class CallbridgeModule : Module() {
                   .build()
 
               telecomManager.registerPhoneAccount(account)
+              isPaRegsitered = true
               return@AsyncFunction true
           }
 

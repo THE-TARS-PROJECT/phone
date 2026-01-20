@@ -18,6 +18,14 @@ export type onCallStateChangeEventPayload = {
   number: string
 }
 
+export type placeCallPayload = {
+  status: boolean
+}
+
+export type registerPaPayload = {
+  status: boolean
+}
+
 export type CallbridgeViewProps = {
   url: string;
   onLoad: (event: { nativeEvent: OnLoadEventPayload }) => void;

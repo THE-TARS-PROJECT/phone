@@ -9,6 +9,8 @@ import {
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from "react";
 
+import { placeCall } from "@/modules/callbridge";
+
 export default function DialPad() {
 
     const [dialText, setDialText] = useState("");
@@ -19,6 +21,17 @@ export default function DialPad() {
         ["7", "8", "9"],
         ["*", "0", "#"]
     ]
+
+    async function _placeCall(){
+        let status = await placeCall(dialText);
+        if(status){
+            console.log("outgoing call placed");
+        }
+
+        else{
+            console.log("failed to place call");
+        }
+    }
 
     function appendDialText(digit: string) {
         setDialText(`${dialText}${digit}`);
@@ -70,7 +83,9 @@ export default function DialPad() {
                     </View>
                 ))}
             </View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {
+                _placeCall();                
+            }}>
                 <Ionicons name="call" size={30} color="#AACFD1" />
             </TouchableOpacity>
         </View>
