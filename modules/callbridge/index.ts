@@ -21,3 +21,7 @@ export async function registerPa(){
 export async function placeCall(number: string){
     return await CallbridgeModule.placeCall(number);
 }
+
+export async function endCall(){
+    return await CallbridgeModule.endCall();
+}

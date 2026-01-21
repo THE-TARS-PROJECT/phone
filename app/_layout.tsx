@@ -1,4 +1,4 @@
-import { Stack, useRouter } from "expo-router"
+import { Stack, usePathname, useRouter } from "expo-router"
 import { useState } from "react"
 import { StyleSheet, View } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
@@ -8,7 +8,23 @@ import BottomBar from "./components/Bottombar"
 export default function RootLayout() {
 
     const [title, setTitle] = useState("recent calls");
+
+    type screenRoutes = '/' | '/Contacts' | '/Settings' | '/Outgoing';
+    const titles: Record<string, string> = {
+        "/": "recent calls",
+        "/Contacts": "contacts",
+        "/Settings": "settings",
+        "/Outgoing": "outgoing call"
+    }
+    
     const router = useRouter();
+    const pathname = usePathname();
+
+    function switchPage(screen: screenRoutes){
+        if(pathname == screen) return;
+        setTitle(titles[screen])
+        router.push(screen);
+    }
 
     return (
         <SafeAreaView edges={['top']} style={{
@@ -29,20 +45,18 @@ export default function RootLayout() {
                 <BottomBar
                     onBookPressed={() => {
                         console.log("Book pressed");
-                        setTitle("contacts");
-                        router.push("/Contacts");
+                        switchPage('/Contacts')
                     }}
 
                     onDialPadPressed={() => {
                         console.log("Dial Pressed pressed");
-                        setTitle("recent calls");
-                        router.push("/");
+                        switchPage("/");
                     }}
 
                     onGearPressed={() => {
                         console.log("Setting pressed");
-                        setTitle("settings");
-                        router.push("/Settings");
+                        // switchPage("/Settings");
+                        switchPage("/Outgoing");
                     }}
                 />
             </View>

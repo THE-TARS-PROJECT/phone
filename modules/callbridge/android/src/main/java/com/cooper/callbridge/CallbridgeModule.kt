@@ -170,5 +170,24 @@ class CallbridgeModule : Module() {
           val status = placeCall(number)
           return@AsyncFunction status
       }
+
+      AsyncFunction("endCall"){
+          val context = appContext.reactContext
+          if(context == null){
+              Log.e("context", "react context is null")
+              return@AsyncFunction null ;
+          }
+
+          try{
+              CallManager.disconnect()
+              Log.e("call", "call disconnected")
+              return@AsyncFunction true
+          }
+
+          catch (e: Exception){
+              Log.e("call", e.toString())
+              return@AsyncFunction false
+          }
+      }
   }
 }

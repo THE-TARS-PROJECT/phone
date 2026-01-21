@@ -26,6 +26,10 @@ export type registerPaPayload = {
   status: boolean
 }
 
+export type endCallPayload = {
+  status: boolean
+}
+
 export type CallbridgeViewProps = {
   url: string;
   onLoad: (event: { nativeEvent: OnLoadEventPayload }) => void;

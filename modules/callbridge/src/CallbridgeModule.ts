@@ -8,6 +8,7 @@ declare class CallbridgeModule extends NativeModule<CallbridgeModuleEvents> {
   hangUpCall(): (void);
   placeCall(number: string): (boolean);
   registerPa(): (boolean);
+  endCall(): (boolean);
 }
 
 // This call loads the native module object from the JSI.

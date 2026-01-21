@@ -19,7 +19,7 @@ export default function Home() {
             else {
                 console.log("permission denied");
             }
-        })
+        })();
 
         async function init(){
             let register = await registerPa();
