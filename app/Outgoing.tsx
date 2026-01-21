@@ -1,6 +1,7 @@
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { useLocalSearchParams } from "expo-router";
 import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import IconButton from './components/IconButton';
 
 function Outgoing() {
 
@@ -19,7 +20,14 @@ function Outgoing() {
             <Image src={"https://tinyurl.com/sz2wsb7f"} width={width - 100} style={{height: '20%'}} />
 
             {/* call controls */}
-            <View></View>
+            <View style={styles.callControls}>
+                <IconButton icon={'mic'}></IconButton>
+                <IconButton icon={'volume-high'}></IconButton>
+                <IconButton icon={'pause'}></IconButton>
+                <IconButton icon={'recording'}></IconButton>
+                <IconButton icon={'keypad'}></IconButton>
+                <IconButton icon={'add-outline'}></IconButton>
+            </View>
 
             <TouchableOpacity style={styles.hangUpBtn}>
                 <MaterialCommunityIcons name="phone-hangup" size={32} color="white" />
@@ -66,6 +74,13 @@ const styles = StyleSheet.create({
         borderColor: 'red',
         height: '5%',
         width: '10%'
+    },
+    
+    callControls: {
+        gap: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        flexWrap: 'wrap'
     }
 });
 
