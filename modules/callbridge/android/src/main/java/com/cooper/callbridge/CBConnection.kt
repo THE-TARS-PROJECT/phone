@@ -4,6 +4,7 @@ import android.telecom.Connection
 import android.telecom.DisconnectCause
 import android.telecom.TelecomManager.PRESENTATION_ALLOWED
 import android.telecom.VideoProfile.STATE_AUDIO_ONLY
+import android.util.Log
 
 class CBConnection: Connection() {
 
@@ -18,6 +19,7 @@ class CBConnection: Connection() {
 
     override fun onAnswer() {
         setActive()
+        Log.d("call", "call is active")
     }
 
     override fun onReject() {
