@@ -3,6 +3,7 @@ package com.cooper.callbridge
 import android.telecom.Call
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 
 object CallManager {
     private val _currentCall = MutableStateFlow<Call?>(null)
@@ -17,5 +18,9 @@ object CallManager {
 
     fun updateNumber(number: String?){
         _number.value = number
+    }
+
+    fun disconnect(){
+        currentCall.value?.disconnect()
     }
 }

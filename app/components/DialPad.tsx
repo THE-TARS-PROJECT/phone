@@ -10,9 +10,11 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from "react";
 
 import { placeCall } from "@/modules/callbridge";
+import { useRouter } from "expo-router";
 
 export default function DialPad() {
 
+    const router = useRouter();
     const [dialText, setDialText] = useState("");
 
     const btns = [
@@ -25,7 +27,14 @@ export default function DialPad() {
     async function _placeCall(){
         let status = await placeCall(dialText);
         if(status){
-            console.log("outgoing call placed");
+            router.push({
+                pathname: '/Outgoing',
+                params: {
+                    "image": "",
+                    "name": "Unknown",
+                    "phone": dialText
+                }
+            })
         }
 
         else{

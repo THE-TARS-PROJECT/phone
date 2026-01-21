@@ -1,10 +1,13 @@
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-import { useLocalSearchParams } from "expo-router";
+import { useLocalSearchParams, useRouter } from "expo-router";
 import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import IconButton from './components/IconButton';
 
+import { endCall } from '@/modules/callbridge';
+
 function Outgoing() {
 
+    const router = useRouter();
     const width = Dimensions.get('window').width;
     const { img, name, phone } = useLocalSearchParams();
 
@@ -13,8 +16,8 @@ function Outgoing() {
 
             {/* contains name, phone number and call status */}
             <View style={styles.info_a}>
-                <Text style={[styles.text, {fontSize: 20}]}>Raghav Kumar</Text>
-                <Text style={[styles.text, {fontSize: 14}]}>+91 9582576830</Text>
+                <Text style={[styles.text, {fontSize: 20}]}>{name}</Text>
+                <Text style={[styles.text, {fontSize: 14}]}>{phone}</Text>
                 <Text style={styles.text}>Calling...</Text>
             </View>
             <Image src={"https://tinyurl.com/sz2wsb7f"} width={width - 100} style={{height: '20%'}} />
@@ -29,7 +32,16 @@ function Outgoing() {
                 <IconButton icon={'add-outline'}></IconButton>
             </View>
 
-            <TouchableOpacity style={styles.hangUpBtn}>
+            <TouchableOpacity style={styles.hangUpBtn} onPress={() => {
+                async function _endCall(){
+                    const isDisconnected = await endCall();
+                    if(isDisconnected){
+                        router.back();
+                    }
+                }
+
+                _endCall();
+            }} >
                 <MaterialCommunityIcons name="phone-hangup" size={32} color="white" />
                 <View style={{
                     position: 'absolute',
