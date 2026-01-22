@@ -21,9 +21,9 @@ export default function Home() {
             }
         })();
 
-        async function init(){
+        async function init() {
             let register = await registerPa();
-            if(!register){
+            if (!register) {
                 console.log("failed to register phone account");
                 return;
             }
@@ -31,10 +31,7 @@ export default function Home() {
             return;
         }
 
-        init();
-    })
-
-    useEffect(() => {
+        
         async function roleCheck() {
             const role = await isRoleHeld();
             if (role) {
@@ -42,8 +39,9 @@ export default function Home() {
             }
             requestRole();
         }
-
+        
         roleCheck();
+        init();
     }, [])
 
     useEventListener(callbridge, 'onRoleResult', (event) => {
