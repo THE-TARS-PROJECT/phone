@@ -31,6 +31,7 @@ object CallManager {
         _number.value = number
     }
     fun disconnect(){
+        _currentCall.value = null
         currentCall.value?.disconnect()
     }
 }

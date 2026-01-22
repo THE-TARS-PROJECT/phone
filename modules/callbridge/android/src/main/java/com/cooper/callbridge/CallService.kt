@@ -14,5 +14,6 @@ class CallService : InCallService() {
     override fun onCallRemoved(call: Call?) {
         super.onCallRemoved(call)
         CallManager.updateCall(null)
+        CallManager.updateNumber(null)
     }
 }
