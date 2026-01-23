@@ -76,7 +76,7 @@ class CallbridgeModule : Module() {
               val telecomManager = context.getSystemService(Context.TELECOM_SERVICE) as TelecomManager
               val handle = PhoneAccountHandle(ComponentName(context, CBConnService::class.java), "cdialer")
               val account = PhoneAccount.builder(handle, "cdialer")
-                  .setCapabilities(PhoneAccount.CAPABILITY_SELF_MANAGED)
+                  .setCapabilities(PhoneAccount.CAPABILITY_CALL_PROVIDER)
                   .build()
 
               telecomManager.registerPhoneAccount(account)

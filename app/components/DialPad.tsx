@@ -2,11 +2,9 @@ import {
     Pressable,
     StyleSheet,
     Text,
-    TouchableOpacity,
     View
 } from "react-native";
 
-import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from "react";
 
 import { placeCall } from "@/modules/callbridge";
@@ -14,8 +12,12 @@ import { useRouter } from "expo-router";
 
 export default function DialPad() {
 
+<<<<<<< HEAD
     const router = useRouter();
     const [dialText, setDialText] = useState("");
+=======
+    const [isPressed, setPressed] = useState(false);
+>>>>>>> parent of f08653a (added digit box and call button)
 
     const btns = [
         ["1", "2", "3"],
@@ -24,6 +26,7 @@ export default function DialPad() {
         ["*", "0", "#"]
     ]
 
+<<<<<<< HEAD
     async function _placeCall(){
         let status = await placeCall(dialText);
         if(status){
@@ -64,14 +67,15 @@ export default function DialPad() {
                     <Ionicons name="backspace" size={28} color="red" />
                 </TouchableOpacity>
             </View>
+=======
+    return (
+        <View style={styles.main_container}>
+>>>>>>> parent of f08653a (added digit box and call button)
             <View>
                 {btns.map((row, rowIndex) => (
                     <View key={rowIndex} style={styles.row} >
                         {row.map((btn) => (
                             <Pressable
-                                onPress={() => {
-                                    appendDialText(btn.toString());
-                                }}
                                 key={btn} style={({ pressed }) => [
                                     styles.btn,
                                     {
@@ -92,20 +96,27 @@ export default function DialPad() {
                     </View>
                 ))}
             </View>
+<<<<<<< HEAD
             <TouchableOpacity onPress={() => {
                 _placeCall();                
             }}>
                 <Ionicons name="call" size={30} color="#AACFD1" />
             </TouchableOpacity>
+=======
+>>>>>>> parent of f08653a (added digit box and call button)
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     main_container: {
+<<<<<<< HEAD
         flex: 1,
         gap: 50,
         height: "40%",
+=======
+        height: '50%',
+>>>>>>> parent of f08653a (added digit box and call button)
         borderWidth: 2,
         borderColor: '#AACFD1',
         justifyContent: 'center',
@@ -120,6 +131,7 @@ const styles = StyleSheet.create({
         width: '50%',
         flexDirection: 'row',
         justifyContent: 'space-between',
+        marginBottom: 15,
     },
 
     btn: {
@@ -128,6 +140,7 @@ const styles = StyleSheet.create({
         height: 50,
         justifyContent: 'center',
         alignItems: 'center'
+<<<<<<< HEAD
     },
 
     displayBox: {
@@ -139,5 +152,7 @@ const styles = StyleSheet.create({
 
     sub_container: {
         flexDirection: 'row'
+=======
+>>>>>>> parent of f08653a (added digit box and call button)
     }
 })
