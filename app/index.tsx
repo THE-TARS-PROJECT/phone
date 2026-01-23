@@ -10,7 +10,7 @@ import * as Contacts from 'expo-contacts';
 export default function Home() {
 
     useEffect(() => {
-        (async () => {
+        async function requestContactsPerm(){
             const { status } = await Contacts.requestPermissionsAsync();
             if (status == 'granted') {
                 console.log("permission granted");
@@ -19,7 +19,7 @@ export default function Home() {
             else {
                 console.log("permission denied");
             }
-        })();
+        }
 
         async function init() {
             let register = await registerPa();
@@ -41,6 +41,7 @@ export default function Home() {
         }
         
         roleCheck();
+        requestContactsPerm();
         init();
     }, [])
 

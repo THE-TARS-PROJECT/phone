@@ -14,7 +14,19 @@
     "android": {
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.cooper079.cdialer"
+      "package": "com.cooper079.cdialer",
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": { "scheme": "tel" },
+          "category": ["DEFAULT", "BROWSABLE"]
+        },
+        {
+          "action": "DIAL",
+          "data": { "scheme": "tel" },
+          "category": ["DEFAULT", "BROWSABLE"]
+        }
+      ]
     },
     "plugins": [
       "expo-router",
