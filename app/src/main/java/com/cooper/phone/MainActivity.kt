@@ -8,9 +8,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import com.cooper.phone.ui.theme.PhoneTheme
 
@@ -25,12 +23,21 @@ class MainActivity : ComponentActivity() {
             PhoneTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Log.d("padding", innerPadding.toString())
-                    DialerScreen()
+                    DialerScreen({
+                        test()
+                    })
                 }
             }
         }
 
         requestRole()
+    }
+
+    fun test(){
+        val intent = Intent(this, InCall::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+        }
+        applicationContext.startActivity(intent)
     }
 
     fun requestRole(){
