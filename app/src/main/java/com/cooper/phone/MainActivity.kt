@@ -13,11 +13,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import com.cooper.phone.ui.theme.PhoneTheme
-import kotlin.system.exitProcess
 
 class MainActivity : ComponentActivity() {
 
-    private final val REQUEST_ID = 1
+    private val REQUEST_ID = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,10 +24,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             PhoneTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Text(
-                        text = "Hello",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Log.d("padding", innerPadding.toString())
+                    DialerScreen()
                 }
             }
         }
