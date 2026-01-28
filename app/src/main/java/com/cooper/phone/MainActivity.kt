@@ -34,10 +34,11 @@ class MainActivity : ComponentActivity() {
     }
 
     fun test(){
-        val intent = Intent(this, InCall::class.java).apply {
+        val intent = Intent(this, InCallUi::class.java).apply {
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
         }
-        applicationContext.startActivity(intent)
+        startActivity(intent)
     }
 
     fun requestRole(){
